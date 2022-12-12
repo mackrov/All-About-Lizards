@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Yash</title>
+    </head>
+<link href="css/index.css" rel="stylesheet">
+
+    <body>
+        <header>
+        <h1 class="heading">All About Lizards</h1>
+        </header>
+        
+        <main>
+            <div class="container">
+                <div class="columns"> 
+                    <!-- first column class -->
+            <section class="main-content">
+                <h2 class="subheading">Lizards are <span class="text-white">awesome</span></h2>
+               <div class="columns">
+                <!-- second column class -->
+                <!-- here we are using the same div class twice, though we can
+                use different class name, but we have to wrap them in two
+                 divs ,first time when we don't have it twice, display:flex 
+                 is called on column class and it will convert all direct child into columns
+                 but here only 2 direct child are found, 1 is section's main content
+                 and the other one is aside's sidebar class, since list are inside the section
+                 they are grouped together in the column, 
+                 when we create a new div class of column(same name here) this one's direct
+                 child are div class col-left and col-right, we had to group them in different div
+                 else they will be grouped as single column when display:flex is called on columns 
+         -->
+                <div class="col-left">
+                <img src="img/chameleon.jpg" alt="pic of a chameleon">
+                </div>
+                <div class="col-right">
+                    <p>We can declare widths and heights on elements to define their size. 
+                        We also have other properties like margins, padding, and borders which 
+                        make up the box model.
+                        Padding is a lot like margin, except that it adds the empty space 
+                        inside the element, which includes it's background-color.
+                    </p>
+    
+                    <!-- unordered list -->
+                    <ul>
+    <li>dui ultricies integer</li>
+      <li>  eget amet consectetur</li>
+        <li> interdum mattis</li>
+            <li>aenean nulla diam</li>
+                <li>pellentesque pellentesque duis</li>
+                    </ul>
+    
+    
+                    <p> Borders are a line bullshit span example that surrounds an element, 
+                        similar to a stroke if you are familiar with design software.
+                        Margin is used to control the space around an element.</p>
+                    </div>
+                </div>
+                </section>
+            <aside class="sidebar">
+            <h2 class="subheading">Best lizards for <span class="text-white">pets</span></h2>
+            <!-- ordered list -->
+            <ol>
+                <li>Bearded Dragon</li>
+                    <li>Leopard Gecko</li>
+                        <li>Crested Gecko</li>
+                            <li>Blue-Tongue Skink</li>
+                                <li>Green Anole</li>
+                                    <li>Argentine Black and White Tegu</li>
+                                        <li>Uromastyx</li>
+                                            <li>African Fat-Tailed Gecko</li>
+                                                <li>Chinese Water Dragon</li>
+                                                    <li>Gold-Dust Day Gecko</li>
+            </ol>
+            <p class="source">*source:<a href="https://www.everythingreptiles.com">everythingreptiles.com</a></p>
+        </aside>
+    </div> 
+    <!-- close column -->
+</div>
+<!-- close container -->
+    </main>
+    </body>
+
+</html>
